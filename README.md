@@ -1,5 +1,4 @@
-There are three ways: use (just) object,
-use object in QScopedPointer or object in  std::unique_ptr
+There are three ways to declare object: use (just) object, use object in QScopedPointer or object in std::unique_ptr.
 ```
     class1 cl1;
     std::unique_ptr<class1> cl2(new class1());
@@ -14,6 +13,8 @@ output
 ```
 "\x00\x00\x00\x0E\x00""d\x00""e\x00""f\x00""a\x00u\x00l\x00t\x00\x00\x00\x05    \x00\x00\x00\x00\x0E\x00""d\x00""e\x00""f\x00""a\x00u\x00l\x00t\x00\x00\x00\x05    \x00\x00\x00\x00\x0E\x00""d\x00""e\x00""f\x00""a\x00u\x00l\x00t"
 ```
+## Features
+class1 contains private field but operator overloading containd `friend` keyword to accsess to private field.
 ## How to build
 ```
 git clone https://github.com/AndreiCherniaev/unique_ptr_operator_overloading_unique_ptr
