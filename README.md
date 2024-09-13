@@ -22,3 +22,5 @@ mkdir build/
 cmake -S src/ -B build/
 cmake --build build/ --parallel 
 ```
+## See also
+Friend project How to overload the QDataStream &operator << and >> [here](https://github.com/AndreiCherniaev/overload_QDataStream_example)
