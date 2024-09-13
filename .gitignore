@@ -37,6 +37,7 @@ target_wrapper.*
 
 # QtCreator
 *.autosave
+Desktop_Qt_*/
 
 # QtCreator Qml
 *.qmlproject.user
